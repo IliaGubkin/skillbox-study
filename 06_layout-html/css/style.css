@@ -23,16 +23,16 @@ body {
 }
 
 .list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .button-reset {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .flex {
@@ -41,6 +41,15 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 15px;
+}
+
+.section-indent {
+  margin-bottom: 70px
+}
+
+.card-indent {
+  margin-right: 24px;
+  margin-bottom: 24px;
 }
