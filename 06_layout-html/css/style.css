@@ -390,8 +390,9 @@ body {
   color: #FFFFFF;
   padding-right: 15px;
   background-image: url("../img/greater-than.svg");
+  background-size: 11px 25px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right center;
   position: absolute;
   bottom: 27px;
   right: 54px;
