@@ -55,8 +55,7 @@ body {
   min-width: 1170px;
   font-family: "Muller", sans-serif;
   font-weight: 400;
-  background-color: #F1F1F1;
-  ;
+  background-color: #f1f1f1;
 }
 
 .list-reset {
@@ -79,7 +78,7 @@ body {
 
 .link-arrow {
   color: #cc9933;
-  background-image: url('../img/greater-than.svg');
+  background-image: url("../img/greater-than-yellow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -113,12 +112,12 @@ body {
 
 .header-lower-block {
   padding: 14px 45px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 
 .header-link {
-  color: #CC9933;
+  color: #cc9933;
   background-image: url(../img/arrow-right.svg);
   background-position: left;
   background-repeat: no-repeat;
@@ -135,7 +134,7 @@ body {
   border: 1px solid #cc9933;
   border-radius: 10px;
   padding: 13px 20px;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 .header-list:not(:last-child) {
@@ -171,11 +170,21 @@ body {
 }
 
 .item-left:nth-child(1) {
-  background-image: url(../img/offers-bg-1.jpg);
+  background-image: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url(../img/offers-bg-1.jpg);
 }
 
 .item-left:nth-child(2) {
-  background-image: url(../img/offers-bg-2.jpg);
+  background-image: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url(../img/offers-bg-2.jpg);
 }
 
 .item-right {
@@ -190,23 +199,22 @@ body {
   text-align: left;
   font-size: 40px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 40px;
-
 }
 
 .offers-item-descr {
   margin-bottom: 47px;
   text-align: left;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 20px;
 }
 
 .offers-item-link {
   text-align: left;
   font-size: 16px;
-  color: #CC9933;
+  color: #cc9933;
   font-weight: 400;
   line-height: 16px;
   padding-right: 15px;
@@ -244,31 +252,31 @@ body {
   padding: 191px 126px 35px 45px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 
 .sevices-card:nth-child(1) {
-  background-image: url('../img/services-bg-1.jpg');
+  background-image: url("../img/services-bg-1.jpg");
 }
 
 .sevices-card:nth-child(2) {
-  background-image: url('../img/services-bg-2.jpg');
+  background-image: url("../img/services-bg-2.jpg");
 }
 
 .sevices-card:nth-child(3) {
-  background-image: url('../img/services-bg-3.jpg');
+  background-image: url("../img/services-bg-3.jpg");
 }
 
 .sevices-card:nth-child(4) {
-  background-image: url('../img/services-bg-4.jpg');
+  background-image: url("../img/services-bg-4.jpg");
 }
 
-.sevices-card:nth-child(2n+1) {
+.sevices-card:nth-child(2n + 1) {
   margin-right: 24px;
 }
 
-.sevices-card:nth-child(-n+2) {
+.sevices-card:nth-child(-n + 2) {
   margin-bottom: 24px;
 }
 
@@ -289,7 +297,7 @@ body {
   min-height: 276px;
   padding: 116px 42px 32px 45px;
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: 45px 40px;
 }
@@ -330,7 +338,7 @@ body {
   margin-right: 22px;
 }
 
-.advantages-card:nth-child(-n+4) {
+.advantages-card:nth-child(-n + 4) {
   margin-bottom: 22px;
 }
 
@@ -338,7 +346,6 @@ body {
   font-size: 16px;
   line-height: 32px;
 }
-
 
 .text-content {
   padding: 32px 45px 45px 45px;
@@ -349,8 +356,15 @@ body {
 }
 
 .accommodation-card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
+}
+
+.accommodation-card:last-child {
+  min-height: 440px;
+  background-image: url(../img/accommodation-card-9.jpg);
+  background-size: contain;
+  position: relative;
 }
 
 .accommodation-card-img {
@@ -370,11 +384,24 @@ body {
   margin-bottom: 20px;
 }
 
+.accommodation-card-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding-right: 15px;
+  background-image: url("../img/greater-than.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  bottom: 27px;
+  right: 54px;
+}
+
 .accommodation-card:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 
-.accommodation-card:not(:nth-last-child(-n+3)):nth-child(-n+9) {
+.accommodation-card:not(:nth-last-child(-n + 3)):nth-child(-n + 9) {
   margin-bottom: 24px;
 }
 
