@@ -276,7 +276,7 @@ body {
   margin-right: 24px;
 }
 
-.sevices-card:nth-child(-n + 2) {
+.sevices-card:not(:nth-last-child(-n+2)) {
   margin-bottom: 24px;
 }
 
