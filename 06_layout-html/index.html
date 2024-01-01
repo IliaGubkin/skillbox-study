@@ -162,7 +162,7 @@
         </ul>
       </div>
     </section>
-    <section class="accommodation" id="accommodation">
+    <section class="accommodation section-indent" id="accommodation">
       <div class="container">
         <h2 class="title">Размещение</h2>
         <ul class="list-reset flex">
@@ -314,6 +314,33 @@
             <a href="#" class="accommodation-card-link">Посмотреть все варианты</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="tour section-indent">
+      <div class="container">
+        <div class="tour-block">
+          <h2 class="tour-title title">Хочу тур</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" class="tour-form">
+            <div class="tour-inputs flex">
+              <select name="city">
+                <option value="Saint-Petersburg">Санкт-Петербург</option>
+                <option value="Moscow">Москва</option>
+                <option value="Tver">Тверь</option>
+                <option value="Belgorod">Белгород</option>
+              </select>
+              <select name="country">
+                <option value="Australia">Австралия</option>
+                <option value="New-Zeland">Новая Зеландия</option>
+                <option value="China">Китай</option>
+                <option value="Turkey">Турция</option>
+              </select>
+              <input type="date" name="arivalDate">
+              <input type="number" name="nightsSpent">
+              <input type="number" name="touristNumber">
+              <button type="submit" class="button-reset btn">Найти</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
