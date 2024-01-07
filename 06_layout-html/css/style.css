@@ -53,6 +53,7 @@ img {
 
 body {
   min-width: 1170px;
+  padding: 30px 0;
   font-family: "Muller", sans-serif;
   font-weight: 400;
   background-color: #f1f1f1;
@@ -87,7 +88,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 0 15px;
 }
 
 .section-indent {
@@ -278,7 +279,7 @@ body {
   margin-right: 24px;
 }
 
-.sevices-card:not(:nth-last-child(-n+2)) {
+.sevices-card:not(:nth-last-child(-n + 2)) {
   margin-bottom: 24px;
 }
 
@@ -393,7 +394,7 @@ body {
 .accommodation-card-link {
   font-size: 20px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-right: 15px;
   background-image: url("../img/greater-than.svg");
   background-size: 11px 25px;
