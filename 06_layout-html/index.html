@@ -16,8 +16,8 @@
         <a href="#">
           <img src="img/logo.svg" alt="Lagoona лого" class="header-logo">
         </a>
-        <a href="tel:+74953225448" class="header-contact">+7 495 322-54-48</a>
-        <a href="#" class="header-link">Личный кабинет</a>
+        <a href="tel:+74953225448" class="header-contact flex">+7 495 322-54-48</a>
+        <a href="#" class="header-link link">Личный кабинет</a>
       </div>
       <div class="header-lower-block flex">
         <nav class="header-nav flex">
@@ -44,19 +44,19 @@
             <article class="offers-item item-left">
               <h3 class="offers-item-title">Мальдивские острова</h3>
               <p class="offers-item-descr">от&nbsp;55&nbsp;000&nbsp;₽</p>
-              <a href="#" class="offers-item-link link-arrow">Подробнее</a>
+              <a href="#" class="offers-item-link link link-arrow">Подробнее</a>
             </article>
             <article class="offers-item item-left">
               <h3 class="offers-item-title">Горящий тур на&nbsp;остров Крит</h3>
               <p class="offers-item-descr">от&nbsp;30&nbsp;000&nbsp;₽</p>
-              <a href="#" class="offers-item-link link-arrow">Подробнее</a>
+              <a href="#" class="offers-item-link link link-arrow">Подробнее</a>
             </article>
           </div>
           <div class="offers-block flex">
             <article class="offers-item item-right">
               <h3 class="offers-item-title">Номера категории люкс</h3>
               <p class="offers-item-descr">от&nbsp;5&nbsp;000&nbsp;₽</p>
-              <a href="#" class="offers-item-link link-arrow">Подробнее</a>
+              <a href="#" class="offers-item-link link link-arrow">Подробнее</a>
             </article>
           </div>
         </div>
@@ -322,30 +322,145 @@
       <div class="container">
         <div class="tour-block">
           <h2 class="tour-title title">Хочу тур</h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" class="tour-form">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="tour-form">
             <div class="tour-inputs flex">
-              <select name="city">
-                <option value="Saint-Petersburg">Санкт-Петербург</option>
-                <option value="Moscow">Москва</option>
-                <option value="Tver">Тверь</option>
-                <option value="Belgorod">Белгород</option>
-              </select>
-              <select name="country">
-                <option value="Australia">Австралия</option>
-                <option value="New-Zeland">Новая Зеландия</option>
-                <option value="China">Китай</option>
-                <option value="Turkey">Турция</option>
-              </select>
-              <input type="date" name="arivalDate">
-              <input type="number" name="nightsSpent">
-              <input type="number" name="touristNumber">
-              <button type="submit" class="button-reset btn">Найти</button>
+              <div class="tour-input flex">
+                <label for="city">Город вылета</label>
+                <select name="city" id="city">
+                  <option value="Saint-Petersburg">Санкт-Петербург</option>
+                  <option value="Moscow">Москва</option>
+                  <option value="Tver">Тверь</option>
+                  <option value="Belgorod">Белгород</option>
+                </select>
+              </div>
+              <div class="tour-input flex">
+                <label for="country">Страна</label>
+                <select name="country" id="country">
+                  <option value="Australia">Австралия</option>
+                  <option value="New-Zeland">Новая Зеландия</option>
+                  <option value="China">Китай</option>
+                  <option value="Turkey">Турция</option>
+                </select>
+              </div>
+              <div class="tour-input flex">
+                <label for="arivalDate">Дата прибытия</label>
+                <input type="date" id="arivalDate" name="arivalDate">
+              </div>
+              <div class="tour-input flex">
+                <label for="nightsSpent">Ночей</label>
+                <input type="number" id="nightsSpent" name="nightsSpent">
+              </div>
+              <div class="tour-input flex">
+                <label for="touristNumber">Туристы</label>
+                <input type="number" id="touristNumber" name="touristNumber" required>
+              </div>
+              <button type="submit" class="button-reset btn tour-btn">Найти</button>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <section class="contancts section-indent">
+      <div class="container">
+        <h2 class="title">Контакты</h2>
+        <div class="contacts-block flex">
+          <div class="contacts-content">
+            <ul class="list-reset contacts-list">
+              <li class="contact flex">
+                <h3 class="contact-title">Адрес</h3>
+                <div class="contact-data">
+                  <p>Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+                </div>
+              </li>
+              <li class="contact flex">
+                <h3 class="contact-title">Телефоны</h3>
+                <div class="contact-data">
+                  <a href="tel:+74995356434" class="contact-telephone link">+7 499 535-64-34</a>
+                  <a href="tel:+74950050544" class="contact-telephone link">+7 495 005-05-44</a>
+                </div>
+              </li>
+              <li class="contact flex">
+                <h3 class="contact-title">Email</h3>
+                <div class="contact-data">
+                  <a href="mailto:lg.oona@mail.ru" class="contact-email link">lg.oona@mail.ru</a>
+                  <p class="contact-data-descr">по&nbsp;вопросам бронирования</p>
+                  <a href="mailto:hotels.ln@mail.ru" class="contact-email link">hotels.ln@mail.ru</a>
+                  <p class="contact-data-descr">по&nbsp;вопросам сотрудничества</p>
+                </div>
+              </li>
+              <li class="contact flex">
+                <h3 class="contact-title">График</h3>
+                <div class="contact-data">
+                  <p>Понедельник-пятница, с 10:00 до 19:00</p>
+                </div>
+              </li>
+            </ul>
+            <button class="button-reset btn contacts-btn">Построить маршрут</button>
+          </div>
+          <img src="./img/contacts.jpg" alt="Lagoona reception" class="contacts-img">
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <section class="footer">
+      <div class="container">
+        <div class="footer-block flex">
+          <ul class="footer-list list-reset flex">
+            <li class="footer-text">
+              &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+            </li>
+            <li class="footer-text">
+              Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
+              офертой
+            </li>
+            <li class="footer-text">
+              <a href="#" class="link">
+                Пользовательское соглашение
+              </a>
+            </li>
+            <li class="footer-text">
+              11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+            </li>
+            <li class="footer-text">
+              <p>
+                <a href="tel:+74995356434" class="contact-telephone link">+7 499 535-64-34</a>
+              </p>
+              <p>
+                <a href="tel:+74950050544" class="contact-telephone link">+7 495 005-05-44</a>
+              </p>
+            </li>
+            <li class="footer-text">
+              <p>
+                <a href="mailto:lg.oona@mail.ru" class="contact-email link">lg.oona@mail.ru</a>
+              </p>
+              <p>
+                <a href="mailto:hotels.ln@mail.ru" class="contact-email link">hotels.ln@mail.ru</a>
+              </p>
+            </li>
+          </ul>
+          <img src="img/footer-logo.svg" alt="Lagoona лого" class="footer-logo">
+          <ul class="social-logos list-reset">
+            <li class="social-logo">
+              <a href="">
+                <img src="img/tripAdvisor.svg" alt="TripAdvisor лого">
+              </a>
+            </li>
+            <li class="social-logo">
+              <a href="">
+                <img src="img/ok.svg" alt="OK лого">
+              </a>
+            </li>
+            <li class="social-logo">
+              <a href="">
+                <img src="img/vk.svg" alt="VK лого">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
