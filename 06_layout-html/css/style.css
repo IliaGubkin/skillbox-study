@@ -28,8 +28,8 @@ html {
 
 @font-face {
   font-family: "Muller";
-  src: local("MullerMedium"), url(../font/MullerMedium.woff2) format("woff2"),
-    url(../font/MullerMedium.woff) format("woff");
+  src: local("MullerBold"), url(../font/MullerBold.woff2) format("woff2"),
+    url(../font/MullerBold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -176,9 +176,14 @@ body {
   color: #333333;
 }
 
+.offers-block {
+  width: 50%;
+  flex-direction: column;
+}
+
 .offers-block:last-child {
   background-image: url(../img/offers-bg-3.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
   justify-content: flex-end;
@@ -194,28 +199,30 @@ body {
 }
 
 .item-left {
-  width: 573px;
   padding: 40px 108px 40px 45px;
-  background-size: contain;
+  height: calc(50% - 12px);
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+
+.item-right {
+  padding: 40px 108px 40px 45px;
 }
 
 .item-left:nth-child(1) {
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%
-    ),
+      rgba(53, 65, 83, 0) 65.7%),
     url(../img/offers-bg-1.jpg);
 }
 
 .item-left:nth-child(2) {
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%
-    ),
+      rgba(53, 65, 83, 0) 65.7%),
     url(../img/offers-bg-2.jpg);
 }
 
@@ -242,11 +249,6 @@ body {
   font-weight: 400;
   line-height: 16px;
   padding-right: 15px;
-}
-
-.item-right {
-  width: 573px;
-  padding: 40px 108px 40px 45px;
 }
 
 .item-right .offers-item-title {
@@ -501,6 +503,7 @@ body {
 
 .contact {
   border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 23px;
   justify-content: space-between;
 }
 
@@ -510,7 +513,6 @@ body {
 
 .contact-data {
   width: 229px;
-  padding-bottom: 23px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -544,6 +546,9 @@ body {
   height: 341px;
   border-radius: 15px;
   background: #333333;
+  background-image: url(../img/footer-logo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right 177px;
 }
 
 .footer-text {
@@ -570,11 +575,9 @@ body {
   justify-content: space-evenly;
 }
 
-.footer-logo {
-  position: absolute;
-  width: 254px;
-  bottom: 0;
-  right: 177px;
+.contact-telephone,
+.contact-email {
+  display: block;
 }
 
 .social-logos {
