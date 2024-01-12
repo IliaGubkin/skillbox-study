@@ -97,7 +97,17 @@ body {
 }
 
 .link {
+  display: flex;
+  align-items: center;
   color: #cc9933;
+}
+
+.link:hover path {
+  stroke: #F0BF5F;
+}
+
+.link:hover span {
+  color: #F0BF5F;
 }
 
 .link-arrow {
@@ -141,10 +151,7 @@ body {
 }
 
 .header-link {
-  background-image: url(../img/arrow-right.svg);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-left: 28px;
+  padding-left: 5px;
 }
 
 .header-nav {
@@ -485,7 +492,6 @@ body {
 }
 
 .contacts-block {
-  /* flex-direction: column; */
   padding: 45px;
   border-radius: 15px;
   background-color: #ffffff;
