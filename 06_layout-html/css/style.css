@@ -99,15 +99,16 @@ body {
 .link {
   display: flex;
   align-items: center;
+  width: fit-content;
   color: #cc9933;
 }
 
 .link:hover path {
-  stroke: #F0BF5F;
+  stroke: #f0bf5f;
 }
 
 .link:hover span {
-  color: #F0BF5F;
+  color: #f0bf5f;
 }
 
 .link-arrow {
@@ -171,8 +172,13 @@ body {
   margin-right: 45px;
 }
 
-.header-button {
+.header-btn-left {
+  max-width: 110px;
   margin-right: 40px;
+}
+
+.header-btn-right {
+  max-width: 180px;
 }
 
 .title {
@@ -218,16 +224,20 @@ body {
 }
 
 .item-left:nth-child(1) {
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(
+      90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%),
+      rgba(53, 65, 83, 0) 65.7%
+    ),
     url(../img/offers-bg-1.jpg);
 }
 
 .item-left:nth-child(2) {
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(
+      90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%),
+      rgba(53, 65, 83, 0) 65.7%
+    ),
     url(../img/offers-bg-2.jpg);
 }
 
@@ -444,9 +454,11 @@ body {
   text-align: center;
 }
 
+.accommodation-card-btn {
+  max-width: 100px;
+}
+
 .tour-block {
-  width: 1170px;
-  height: 256px;
   background: #e9e9e9;
   border-radius: 15px;
   padding: 45px;
@@ -460,9 +472,12 @@ body {
   border-radius: 15px;
   background-color: #ffffff;
   padding: 32px 28px;
+  justify-content: space-between;
 }
 
 .tour-inputs {
+  flex-grow: 0.8;
+  flex-basis: fit-content;
   justify-content: space-between;
 }
 
@@ -483,12 +498,14 @@ body {
   width: 121px;
 }
 
-.tour-input:nth-last-child(-n + 3) {
+.tour-input:nth-last-child(-n + 3) input {
   border-bottom: 1px solid #e9e9e9;
 }
 
 .tour-btn {
-  min-width: 108px;
+  padding: 13px 30px;
+  max-width: 108px;
+  min-height: 42px;
 }
 
 .contacts-block {
@@ -532,6 +549,7 @@ body {
 
 .contacts-btn {
   padding: 27px 30px;
+  max-width: 220px;
 }
 
 .contact-title {
@@ -540,18 +558,21 @@ body {
   line-height: 20px;
 }
 
-.footer-list {
-  padding: 45px;
-  line-height: 30px;
+.footer-list-left {
+  flex-basis: 30%;
 }
 
 .footer-list-right {
+  flex-basis: 30%;
+  flex-grow: 0.5;
   color: white;
 }
 
 .footer-block {
-  position: relative;
-  width: 1170px;
+  padding: 45px;
+  flex-grow: 1;
+  justify-content: space-between;
+  line-height: 30px;
   border-radius: 15px;
   background: #333333;
   background-image: url(../img/footer-logo.svg);
@@ -566,11 +587,6 @@ body {
 
 .footer-indent {
   margin-bottom: 15px;
-}
-
-.footer-text:nth-child(-n + 3) {
-  width: 302px;
-  margin-right: 125px;
 }
 
 .footer-text:nth-child(-n + 2) {
@@ -588,9 +604,6 @@ body {
 }
 
 .social-logos {
-  position: absolute;
-  top: 45px;
-  right: 45px;
   line-height: 0;
 }
 

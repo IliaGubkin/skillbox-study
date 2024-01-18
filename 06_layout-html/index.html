@@ -39,8 +39,8 @@
             <li class="header-list"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <a class="header-button btn">Хочу тур</a>
-        <button class="button-reset btn">Обратный звонок</button>
+        <a class="header-btn-left btn">Хочу тур</a>
+        <button class="header-btn-right button-reset btn">Обратный звонок</button>
       </div>
     </div>
   </header>
@@ -56,8 +56,8 @@
               <a href="#" class="offers-item-link link">
                 <span>Подробнее</span>
                 <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2"/>
-                  </svg>
+                  <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+                </svg>
               </a>
             </article>
             <article class="offers-item item-left flex">
@@ -197,7 +197,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona espa&ntilde;ola</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -215,7 +215,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona son t&iacute;picas</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -233,7 +233,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona de&nbsp;la&nbsp;guerra</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -251,7 +251,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona mentira piadosa</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -269,7 +269,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona empujar la&nbsp;creatividad</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -287,7 +287,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona el&nbsp;retorno</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -305,7 +305,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona mentira piadosa</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card">
@@ -323,7 +323,7 @@
               </div>
               <h3 class="accommodation-card-subtitle">Lagoona suerte sigui&oacute; siempre</h3>
               <p class="accommodation-card-description">Барселона, Испания</p>
-              <button class="button-reset btn accommodation-card-btn">Номера</button>
+              <button class="accommodation-card-btn button-reset btn">Номера</button>
             </div>
           </li>
           <li class="accommodation-card flex">
@@ -335,8 +335,8 @@
     <section class="tour section-indent">
       <div class="container">
         <div class="tour-block">
-          <h2 class="tour-title title">Хочу тур</h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="tour-form">
+          <h2 class="tour-title title">Хочу тур</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="tour-form flex">
             <ul class="tour-inputs list-reset flex">
               <li class="tour-input flex">
                 <label for="city">Город вылета</label>
@@ -368,10 +368,8 @@
                 <label for="touristNumber">Туристы</label>
                 <input type="number" id="touristNumber" name="touristNumber" required>
               </li>
-              <li>
-                <button type="submit" class="button-reset btn tour-btn">Найти</button>
-              </li>
             </ul>
+            <button type="submit" class="tour-btn button-reset btn">Найти</button>
           </form>
         </div>
       </div>
@@ -411,7 +409,7 @@
                 </div>
               </li>
             </ul>
-            <button class="button-reset btn contacts-btn">Построить маршрут</button>
+            <button class="contacts-btn button-reset btn">Построить маршрут</button>
           </div>
           <img src="./img/contacts.jpg" alt="Lagoona reception" class="contacts-img">
         </div>
@@ -422,28 +420,26 @@
     <section class="footer">
       <div class="container">
         <div class="footer-block flex">
-          <div class="footer-list list-reset flex">
-            <div class="footer-list-left">
-              <p class="footer-text">
-                &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
-              </p>
-              <p class="footer-text">
-                Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
-                офертой
-              </p>
-              <a href="#" class="link">
-                Пользовательское соглашение
-              </a>
-            </div>
-            <div class="footer-list-right">
-              <p class="footer-indent">
-                11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
-              </p>
-              <a href="tel:+74995356434" class="contact-telephone link">+7 499 535-64-34</a>
-              <a href="tel:+74950050544" class="contact-telephone link footer-indent">+7 495 005-05-44</a>
-              <a href="mailto:lg.oona@mail.ru" class="contact-email link">lg.oona@mail.ru</a>
-              <a href="mailto:hotels.ln@mail.ru" class="contact-email link">hotels.ln@mail.ru</a>
-            </div>
+          <div class="footer-list-left">
+            <p class="footer-text">
+              &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+            </p>
+            <p class="footer-text">
+              Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
+              офертой
+            </p>
+            <a href="#" class="link">
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="footer-list-right">
+            <p class="footer-indent">
+              11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+            </p>
+            <a href="tel:+74995356434" class="contact-telephone link">+7 499 535-64-34</a>
+            <a href="tel:+74950050544" class="contact-telephone link footer-indent">+7 495 005-05-44</a>
+            <a href="mailto:lg.oona@mail.ru" class="contact-email link">lg.oona@mail.ru</a>
+            <a href="mailto:hotels.ln@mail.ru" class="contact-email link">hotels.ln@mail.ru</a>
           </div>
           <ul class="social-logos list-reset">
             <li class="social-logo">
